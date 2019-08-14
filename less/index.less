@@ -71,13 +71,15 @@ table {
 
 html, body {
 	// height: 100%;
+	border: @main;
 	max-width: 90%;
-	margin: 0 auto;
-	.flexbox();
+	margin: @margin;
+	// background-image: linear-gradient(lightblue, lightpink);
 }
 
 h1, h2, h3, nav{
 	font-family: @fonttitles;
+
 }
 
 p, table, button, li{
@@ -104,32 +106,58 @@ nav a{
 }
 
 .introContainer{
-	// border: @main;
+	border: @main;
 	padding:50px;
+	margin: @margin;
 	display:flex;
+	// flex-wrap: wrap;
+	flex-direction: column;
 	justify-content: center;
-	flex-wrap: wrap;
 	
 	h1{
 		border: @component;
-		color: red;
+		width:20%;
+		margin:@margin;
+		text-align: center;
+		font-size: 2rem;
+	}
+
+	button{
+		padding:0.5%;
+		width: 20%;
+		// margin-left:38%;
+		margin:@margin;
+	}
+
+	.intro1{
+		width:50%;
+		margin: @margin;
+	}
+	.intro2{
+		width: 50%;
+		margin:@margin;
+		margin-top:2%;
+		// color:blue;
 	}
 }
 
-.intro{
-	display: flex;
-	width: 70%;
-
-	
-
 .selfie{
-	// border: @items;
+	border:@component;
+	margin-left: 35%;
+	margin-top: 4%;
+	width: 30%;
 }
 
-button{
-	margin: 0 auto;
-}
-
-table{
+table, table th, table td{
 	border: 2px solid black;
+}
+
+.workhistoryContainer{
+	margin:@margin;
+	border: @main;
+	width:100%;
+}
+
+.skillsContainer{
+	border:@main;
 }

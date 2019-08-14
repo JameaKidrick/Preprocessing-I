@@ -133,6 +133,7 @@ table {
 }
 html,
 body {
+  border: 2px solid red;
   max-width: 90%;
   margin: 0 auto;
 }
@@ -164,22 +165,49 @@ nav a {
 }
 .introContainer {
   border: 2px solid red;
+  padding: 50px;
+  margin: 0 auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  flex-wrap: wrap;
 }
-.intro {
-  display: flex;
-  width: 70%;
-}
-.intro h1 {
+.introContainer h1 {
   border: 2px solid green;
   width: 20%;
-}
-.selfie,
-.introContainer h1 {
-  border: 2px solid blue;
-}
-button {
   margin: 0 auto;
+  text-align: center;
+  font-size: 2rem;
+}
+.introContainer button {
+  padding: 0.5%;
+  width: 20%;
+  margin: 0 auto;
+}
+.introContainer .intro1 {
+  width: 50%;
+  margin: 0 auto;
+}
+.introContainer .intro2 {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 2%;
+}
+.selfie {
+  border: 2px solid green;
+  margin-left: 35%;
+  margin-top: 4%;
+  width: 30%;
+}
+table,
+table th,
+table td {
+  border: 2px solid black;
+}
+.workhistoryContainer {
+  margin: 0 auto;
+  border: 2px solid red;
+  width: 100%;
+}
+.skillsContainer {
+  border: 2px solid red;
 }
