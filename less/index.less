@@ -48,12 +48,88 @@ table {
 	border-spacing: 0;
 }
 
+/******************** General Code ********************/
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
+
+// Mixins
+.flexbox(){
+	// display: flex;
+	// flex-direction: column;
+	// flex-wrap:wrap;
+}
+
+// Variables
+@fonttitles:'Sansita', sans-serif;
+@fontbody:'Pontano Sans', sans-serif;
+@main:2px solid red;
+@items:2px solid blue;
+@component:2px solid green;
+@margin: 0 auto;
 
 html, body {
-	height: 100%;
+	// height: 100%;
+	max-width: 90%;
+	margin: 0 auto;
+	.flexbox();
 }
 
+h1, h2, h3, nav{
+	font-family: @fonttitles;
+}
+
+p, table, button, li{
+	font-family:@fontbody;
+}
+
+/******************** RESUME CODE ********************/
+
+nav{
+	// border:@main;
+	margin: @margin;
+	margin-top: 2%;
+	width:70%;
+	padding-bottom: 0.5%;
+	border-bottom: 1px solid black;
+	display: flex;
+	justify-content: space-around;
+}
+
+nav a{
+	// border: @items;
+	text-decoration: none;
+	color: black;
+}
+
+.introContainer{
+	// border: @main;
+	padding:50px;
+	display:flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	
+	h1{
+		border: @component;
+		color: red;
+	}
+}
+
+.intro{
+	display: flex;
+	width: 70%;
+
+	
+
+.selfie{
+	// border: @items;
+}
+
+button{
+	margin: 0 auto;
+}
+
+table{
+	border: 2px solid black;
+}

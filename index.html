@@ -3,8 +3,12 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <!-- fontawesome icon load -->
+  <script src="https://kit.fontawesome.com/818d0e3a44.js"></script>
+  <!-- google fonts load -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
-  <title>My Resume</title>
+  <title>Jinx Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
 
@@ -13,85 +17,102 @@
   <![endif]-->
 </head>
 
-<body>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Portfolio</a>
-    <a href="#">Contact</a>
-  </nav>
+  <body>
+    <header>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="https://leagueoflegends.fandom.com/wiki/Jinx">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
 
-  <h1>Jamea Kidrick</h1>
-  <p>My name is Jamea, also known as, Mea. I'm a West Virginia native currently learning how to code as a full stack developer at Lambda School. I'm open to working on side projects just contact me by filling out the form below or through the other media provided.</p>
+    <section class="introContainer">
+      <img class="selfie" src="img/jinx.png" alt="">
+      <h1 class="intro">Jinx</h1>
+      <p class="intro">Hi, I'm Jinx from Piltover. Known as "The Loose Cannon", Marksman, and a "Mad Woman". Currently, I shoot people in League of Legends, but I also like to cook (secretly).</p>
+      <p class="intro">Favorite Quote: "Everybody Panic!"</p>
+  
+      <!-- Button -->
+      <button href='#contact'>Contact Me</button>
+      <!-- Button End -->
+    </section>
 
-  <!-- Button -->
-  <button>
-    <a href="#">Contact Me</a>
-  </button>
-  <!-- Button End -->
+    <main class="contentContainer">
+      <section class="workhistoryConainter">
+        <h2>Work History</h2>
+        <!-- Table -->
+        <table class="tableContainer">
+          <thead>
+            <tr>
+              <th>Years</th>
+              <th>Company</th>
+              <th>Title</th>
+              <th>Tech Used</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Every</td>
+              <td>League of Legends</td>
+              <td>Marksman</td>
+              <td>Guns</td>
+            </tr>
+            <tr>
+                <td>All of my life</td>
+                <td>Jinx Incorporated</td>
+                <td>"Madwoman"</td>
+                <td>Guns</td>
+              </tr>
+            <tr>
+                <td>4</td>
+                <td>Jinx's House</td>
+                <td>Chef</td>
+                <td>Guns</td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- Table End -->
+      </section>
+    
+      <section class="skillsContainer">
+        <h2>Skills</h2>
+        <!-- Unordered List -->
+        </ul>
+          <li><img src="img/jinx-Q-switcheroo.png" alt="">Switcheroo!</li>
+          <li><img src="img/jinx-w-zap.png" alt="">Zap!</li>
+          <li><img src="img/jinx-e-flame-chompers.png" alt="">Flame Chompers!</li>
+          <li><img src="img/jinx-r-super-mega-death-rocket.png" alt="">Super Mega Death Rocket!</li>
+        </ul>
+          <!-- Unordered List End -->
+      </section>
+    </main>
 
-  Work History
-  <!-- Table -->
-  Years
-  Company
-  Title
-  Tech Used
+    <section class="contactContainer">
+      <h2 id="contact">Get in touch</h2>
+      <!-- Form -->
+      <h3>Name</h3>
+      <form action="typename"></form>
+      <h3>E-mail</h3>
+      <form action="typeemail"></form>
+      <h3>Message</h3>
+      <form action="typemessage"></form>
+      <!-- Form End -->
+    </section>
 
-  1
-  2
-  3
-
-  Apple
-  Microsoft
-  Amazon
-
-  Software Engineer
-  Computer Scientist
-  Dev Ops
-
-  Swift
-  .NET
-  AWS
-<!-- Table End -->
-
-Skills
-<!-- Unordered List -->
-HTML
-CSS
-JavaScript
-<!-- Unordered List End -->
-
-Get in touch
-<!-- Form -->
-Name
-<form action="typename"></form>
-E-mail
-<form action="typeemail"></form>
-Message
-<form action="typemessage"></form>
-<!-- Form End -->
-
-Phone
-<!-- telephone logo --> 
-(304) 555-8788
-
-E-mail
-<!-- mail logo -->
-meakidrick@gmail.com
-
-Location
-<!-- house logo -->
-12345 Somewhere Road
-Martinsburg, West Virginia 25401
-USA
-
-LinkedIn
-<!-- linkedin logo with below link -->
-www.linkedin.com/in/jameakidrick
-
-GitHub
-<!-- github logo with below link -->
-https://github.com/JameaKidrick
-
-</body>
+    <address class="contactInfo">
+      <h3>Phone</h3>
+      <!-- telephone logo --> 
+      <p>(888) 555-8788</p>
+  
+      <h3>E-mail</h3>
+      <!-- mail logo -->
+      <p>jinx@gmail.com</p>
+  
+      <h3>Location</h3>
+      <!-- house logo -->
+      <p>Piltover, Runeterra
+      </p>
+    </address>
+  </body>
 </html>
