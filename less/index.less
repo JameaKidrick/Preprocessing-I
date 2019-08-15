@@ -56,9 +56,10 @@ table {
 
 // Mixins
 .flexbox(){
-	// display: flex;
-	// flex-direction: column;
-	// flex-wrap:wrap;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 // Variables
@@ -68,22 +69,26 @@ table {
 @items:2px solid blue;
 @component:2px solid green;
 @margin: 0 auto;
+@indent: 5%;
 
 html, body {
 	// height: 100%;
-	border: @main;
+	font-size: 62.5%;
+	// border: @main;
 	max-width: 90%;
 	margin: @margin;
-	// background-image: linear-gradient(lightblue, lightpink);
+	background-image: linear-gradient(lightblue, lightpink);
 }
 
 h1, h2, h3, nav{
 	font-family: @fonttitles;
+	font-size:2rem;
 
 }
 
-p, table, button, li{
+p, table, button, li, label{
 	font-family:@fontbody;
+	font-size:1.5rem;
 }
 
 /******************** RESUME CODE ********************/
@@ -97,67 +102,149 @@ nav{
 	border-bottom: 1px solid black;
 	display: flex;
 	justify-content: space-around;
-}
-
-nav a{
-	// border: @items;
-	text-decoration: none;
-	color: black;
+	a{
+		// border: @items;
+		text-decoration: none;
+		color: black;
+	}
 }
 
 .introContainer{
-	border: @main;
-	padding:50px;
+	// position:absolute;
+	// border: @main;
+	padding:4%;
+	width:60%;
+	// height:60%;
 	margin: @margin;
-	display:flex;
-	// flex-wrap: wrap;
-	flex-direction: column;
-	justify-content: center;
+	.flexbox();
+	border-bottom:1px dashed black;
 	
 	h1{
-		border: @component;
-		width:20%;
-		margin:@margin;
+		// border: @component;
+		width:100%;
+		margin:2% auto;
 		text-align: center;
-		font-size: 2rem;
+		font-size: 2.5rem;
 	}
 
 	button{
-		padding:0.5%;
-		width: 20%;
+		// padding:0.5%;
+		width: 30%;
 		// margin-left:38%;
+		border:1px solid black;
 		margin:@margin;
+		border-radius: 0.5rem;
+		background-color: rgba(255, 182, 193, 0.432);
 	}
 
 	.intro1{
-		width:50%;
-		margin: @margin;
+		// width:50%;
+		// margin: @margin;
 	}
 	.intro2{
-		width: 50%;
-		margin:@margin;
-		margin-top:2%;
+		// width: 50%;
+		// margin:@margin;
+		margin:@indent auto;
 		// color:blue;
 	}
 }
 
 .selfie{
-	border:@component;
-	margin-left: 35%;
+	// border:@component;
+	margin-left: @indent;
 	margin-top: 4%;
 	width: 30%;
 }
 
-table, table th, table td{
-	border: 2px solid black;
+.topContainer{
+	// border: @items;
+	display:flex;
+
 }
 
-.workhistoryContainer{
+main{
+	@media and screen(max-width:500px){
+		border: @main;
+	}
+	.flexbox();
+	.workhistoryContainer{
+		margin-top:@indent;
+		h2{
+			margin-bottom:3%;
+			text-align: center;
+		}
+	}
+	.skillsContainer{
+		// border:@main;
+		width:100%;
+		margin-top:@indent;
+		list-style-type: none;
+		.flexbox();
+		h2{
+			margin-bottom:3%;
+		}
+		ul{
+			// border: @component;
+			width:100%;
+			.flexbox();
+			flex-direction: row;
+			justify-content: space-around;
+		}
+		li{
+			// border:@items;
+			width:25%;
+			.flexbox();
+		}
+		p{
+			padding-top:10px;
+		}
+	}
+	table{
+		text-align: center;
+	}
+	
+	table, table th{
+		border: 2px solid black;
+		padding:1%;
+	}
+	
+	table td{
+		border: 1px solid black;
+		padding:2%;
+	}
+	
+}
+
+
+
+.contactContainer{
+	// border: @main;
+	width:75%;
+	// .flexbox();
 	margin:@margin;
-	border: @main;
-	width:100%;
-}
-
-.skillsContainer{
-	border:@main;
+	margin-top:@indent;
+	margin-bottom:@indent;
+	h2{
+		text-align: center;
+	}
+	.nameContainer, .emailContainer, .messageContainer{
+		// border:@component;
+		margin:@indent;
+	}
+	.name, .email, .message{
+		// border:@items;
+		width:100%;
+		background-color: rgb(226, 224, 224);
+		border-radius: 1rem;
+	}
+	.enter{
+		background-color:rgb(216, 234, 240);
+		border-radius:1rem;
+		margin-left:@indent;
+		width:20%;
+	}
+	.message{
+		height:10rem;
+		width:100%;
+	}
 }

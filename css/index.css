@@ -133,21 +133,25 @@ table {
 }
 html,
 body {
-  border: 2px solid red;
+  font-size: 62.5%;
   max-width: 90%;
   margin: 0 auto;
+  background-image: linear-gradient(lightblue, lightpink);
 }
 h1,
 h2,
 h3,
 nav {
   font-family: 'Sansita', sans-serif;
+  font-size: 2rem;
 }
 p,
 table,
 button,
-li {
+li,
+label {
   font-family: 'Pontano Sans', sans-serif;
+  font-size: 1.5rem;
 }
 /******************** RESUME CODE ********************/
 nav {
@@ -164,50 +168,128 @@ nav a {
   color: black;
 }
 .introContainer {
-  border: 2px solid red;
-  padding: 50px;
+  padding: 4%;
+  width: 60%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  border-bottom: 1px dashed black;
 }
 .introContainer h1 {
-  border: 2px solid green;
-  width: 20%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 2% auto;
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 .introContainer button {
-  padding: 0.5%;
-  width: 20%;
+  width: 30%;
+  border: 1px solid black;
   margin: 0 auto;
-}
-.introContainer .intro1 {
-  width: 50%;
-  margin: 0 auto;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 182, 193, 0.432);
 }
 .introContainer .intro2 {
-  width: 50%;
-  margin: 0 auto;
-  margin-top: 2%;
+  margin: 5% auto;
 }
 .selfie {
-  border: 2px solid green;
-  margin-left: 35%;
+  margin-left: 5%;
   margin-top: 4%;
   width: 30%;
 }
-table,
-table th,
-table td {
-  border: 2px solid black;
+.topContainer {
+  display: flex;
 }
-.workhistoryContainer {
-  margin: 0 auto;
-  border: 2px solid red;
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media and screen (max-width: 500px) {
+  main {
+    border: 2px solid red;
+  }
+}
+main .workhistoryContainer {
+  margin-top: 5%;
+}
+main .workhistoryContainer h2 {
+  margin-bottom: 3%;
+  text-align: center;
+}
+main .skillsContainer {
   width: 100%;
+  margin-top: 5%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.skillsContainer {
-  border: 2px solid red;
+main .skillsContainer h2 {
+  margin-bottom: 3%;
+}
+main .skillsContainer ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+main .skillsContainer li {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .skillsContainer p {
+  padding-top: 10px;
+}
+main table {
+  text-align: center;
+}
+main table,
+main table th {
+  border: 2px solid black;
+  padding: 1%;
+}
+main table td {
+  border: 1px solid black;
+  padding: 2%;
+}
+.contactContainer {
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.contactContainer h2 {
+  text-align: center;
+}
+.contactContainer .nameContainer,
+.contactContainer .emailContainer,
+.contactContainer .messageContainer {
+  margin: 5%;
+}
+.contactContainer .name,
+.contactContainer .email,
+.contactContainer .message {
+  width: 100%;
+  background-color: #e2e0e0;
+  border-radius: 1rem;
+}
+.contactContainer .enter {
+  background-color: #d8eaf0;
+  border-radius: 1rem;
+  margin-left: 5%;
+  width: 20%;
+}
+.contactContainer .message {
+  height: 10rem;
+  width: 100%;
 }
