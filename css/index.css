@@ -207,9 +207,9 @@ main {
   justify-content: center;
   align-items: center;
 }
-@media and screen (max-width: 500px) {
+@media screen and (max-width: 500px) {
   main {
-    border: 2px solid red;
+    background-color: #000000;
   }
 }
 main .workhistoryContainer {

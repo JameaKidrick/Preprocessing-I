@@ -163,9 +163,10 @@ nav{
 }
 
 main{
-	@media and screen(max-width:500px){
-		border: @main;
+	@media screen and (max-width:500px){
+		background-color: rgb(0, 0, 0); 
 	}
+	// Media query does not work; no changes happen to page when changed to different responsive modes
 	.flexbox();
 	.workhistoryContainer{
 		margin-top:@indent;
