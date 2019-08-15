@@ -1,1 +1,295 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/******************** General Code ********************/
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-size: 62.5%;
+  max-width: 90%;
+  margin: 0 auto;
+  background-image: linear-gradient(lightblue, lightpink);
+}
+h1,
+h2,
+h3,
+nav {
+  font-family: 'Sansita', sans-serif;
+  font-size: 2rem;
+}
+p,
+table,
+button,
+li,
+label {
+  font-family: 'Pontano Sans', sans-serif;
+  font-size: 1.5rem;
+}
+/******************** RESUME CODE ********************/
+nav {
+  margin: 0 auto;
+  margin-top: 2%;
+  width: 70%;
+  padding-bottom: 0.5%;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+.introContainer {
+  padding: 4%;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px dashed black;
+}
+.introContainer h1 {
+  width: 100%;
+  margin: 2% auto;
+  text-align: center;
+  font-size: 2.5rem;
+}
+.introContainer button {
+  width: 30%;
+  border: 1px solid black;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+  background-color: rgba(255, 182, 193, 0.432);
+}
+.introContainer .intro2 {
+  margin: 5% auto;
+}
+.selfie {
+  margin-left: 5%;
+  margin-top: 4%;
+  width: 30%;
+}
+.topContainer {
+  display: flex;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 500px) {
+  main {
+    background-color: #000000;
+  }
+}
+main .workhistoryContainer {
+  margin-top: 5%;
+}
+main .workhistoryContainer h2 {
+  margin-bottom: 3%;
+  text-align: center;
+}
+main .skillsContainer {
+  width: 100%;
+  margin-top: 5%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .skillsContainer h2 {
+  margin-bottom: 3%;
+}
+main .skillsContainer ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+main .skillsContainer li {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .skillsContainer p {
+  padding-top: 10px;
+}
+main table {
+  text-align: center;
+}
+main table,
+main table th {
+  border: 2px solid black;
+  padding: 1%;
+}
+main table td {
+  border: 1px solid black;
+  padding: 2%;
+}
+.contactContainer {
+  width: 75%;
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.contactContainer h2 {
+  text-align: center;
+}
+.contactContainer .nameContainer,
+.contactContainer .emailContainer,
+.contactContainer .messageContainer {
+  margin: 5%;
+}
+.contactContainer .name,
+.contactContainer .email,
+.contactContainer .message {
+  width: 100%;
+  background-color: #e2e0e0;
+  border-radius: 1rem;
+}
+.contactContainer .enter {
+  background-color: #d8eaf0;
+  border-radius: 1rem;
+  margin-left: 5%;
+  width: 20%;
+}
+.contactContainer .message {
+  height: 10rem;
+  width: 100%;
+}

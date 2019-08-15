@@ -3,8 +3,12 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <!-- fontawesome icon load -->
+  <script src="https://kit.fontawesome.com/818d0e3a44.js"></script>
+  <!-- google fonts load -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
-  <title>My Resume</title>
+  <title>Jinx Resume</title>
 
   <link rel="stylesheet" href="css/index.css">
 
@@ -13,7 +17,128 @@
   <![endif]-->
 </head>
 
-<body>
-  <h1>My Resume</h1>
-</body>
+  <body>
+    <header>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="https://leagueoflegends.fandom.com/wiki/Jinx">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <div class="topContainer">
+      <img class="selfie" src="img/jinx.png" alt="">
+      <section class="introContainer">
+        <h1 class="intro">Jinx</h1>
+        <p class="intro1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas doloremque alias harum nam laborum ut odit nihil facere eveniet modi. Obcaecati repellat ab modi, eius expedita officia doloribus in ratione. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat aliquam repudiandae quod temporibus qui error, fuga earum, eaque nisi iste illo porro, doloribus dolores? Reiciendis consectetur corrupti repellat voluptatibus facere!</p>
+        <!-- <p>Hi, I'm Jinx from Piltover. Known as "The Loose Cannon", Marksman, and a "Madwoman". Currently, I shoot people in League of Legends, but I also like to cook (secret).</p> -->
+        <p class="intro2">Favorite Quote: "Everybody Panic!"</p>
+    
+        <!-- Button -->
+        <button href='#contact'>Contact Me</button>
+        <!-- Button End -->
+      </section>
+    </div>
+
+    <main class="contentContainer">
+      <section class="workhistoryContainer">
+        <h2>Work History</h2>
+        <!-- Table -->
+        <table class="tableContainer">
+          <thead>
+            <tr>
+              <th>Years</th>
+              <th>Company</th>
+              <th>Title</th>
+              <th>Tech Used</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Every</td>
+              <td>League of Legends</td>
+              <td>Marksman</td>
+              <td>Guns</td>
+            </tr>
+            <tr>
+                <td>All of my life</td>
+                <td>Jinx Incorporated</td>
+                <td>"Madwoman"</td>
+                <td>Guns</td>
+              </tr>
+            <tr>
+                <td>1</td>
+                <td>Jinx's House</td>
+                <td>Chef</td>
+                <td>Guns</td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- Table End -->
+      </section>
+    
+      <section class="skillsContainer">
+        <h2>Skills</h2>
+        <!-- Unordered List -->
+        <ul>
+          <li>
+            <img src="img/jinx-Q-switcheroo.png" alt="">
+            <p>Switcheroo!</p>
+          </li>
+          <li>
+            <img src="img/jinx-w-zap.png" alt="">
+            <p>Zap!</p>
+          </li>
+          <li>
+            <img src="img/jinx-e-flame-chompers.png" alt="">
+            <p>Flame Chompers!</p>
+          </li>
+          <li>
+            <img src="img/jinx-r-super-mega-death-rocket.png" alt="">
+            <p>Super Mega Death Rocket!</p>
+          </li>
+        </ul>
+          <!-- Unordered List End -->
+      </section>
+    </main>
+
+    <section class="contactContainer">
+      <h2 id="contact">Get in touch</h2>
+      <!-- Form -->
+      <form action="">
+        <div class="contact-form">
+          <div class="nameContainer">
+            <label for="name">Name</label>
+            <input type="text" class="name" required> <br>
+          </div>
+          <div class="emailContainer">
+            <label for="email">E-mail</label>
+            <input type="text" class="email" required> <br>
+          </div>
+          <div class="messageContainer">
+            <label for="message">Message</label>
+            <input type="text" class="message" required> <br>
+          </div>
+        </div>
+        <div class="submit">
+          <input type="submit" class="enter" value='Enter'>
+        </div>
+      </form>
+    </section>
+
+    <!-- <address class="contactInfo">
+      <!-- <h3>Phone</h3> -->
+      <!-- telephone logo --> 
+      <!-- <p>(888) 555-8788</p> -->
+  
+      <!-- <h3>E-mail</h3> -->
+      <!-- mail logo -->
+      <!-- <p>jinx@lol.com</p> -->
+  
+      <!-- <h3>Location</h3> -->
+      <!-- house logo -->
+      <!-- <p>Piltover, Runeterra</p> -->
+    <!-- </address> --> -->
+  </body>
 </html>
